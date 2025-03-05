@@ -1,0 +1,33 @@
+# Ensure LF (Line Feed) endings for source code files
+*.java text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+
+# Treat binary files properly to prevent corruption
+*.jar binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.mp4 binary
+
+# Handle JSON, CSV, and log files better for diffing
+*.json diff=json
+*.csv diff=csv
+*.log diff=log
+*.properties diff=properties
+
+# Ensure shell scripts are treated as executable
+*.sh eol=lf diff=sh
+
+# Prevent auto merge for dependency lock files
+pom.xml merge=union
+*.lock merge=keepMine

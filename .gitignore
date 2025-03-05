@@ -1,0 +1,35 @@
+# Java
+*.class
+*.jar
+*.war
+*.iml
+
+# Maven
+/target/
+/.idea/
+/out/
+/*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Secrets & Configuration
+application.properties
+.env
+
+# Docker
+docker-compose.yml
+/docker-data/
+
+# Build Files
+*.zip
+*.tar.gz
+
+# Database Files (If Using Embedded DB)
+*.h2.db
+*.mv.db
