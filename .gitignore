@@ -33,3 +33,5 @@ docker-compose.yml
 # Database Files (If Using Embedded DB)
 *.h2.db
 *.mv.db
+
+.vscode

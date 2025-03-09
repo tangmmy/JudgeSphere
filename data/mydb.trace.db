@@ -1,0 +1,20 @@
+2025-03-09 02:19:33.461847+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table users (\000d\000a        id bigint [*]identity not null,\000d\000a        password varchar(255),\000d\000a        role varchar(255) not null,\000d\000a        username varchar(255) not null,\000d\000a        primary key (id)\000d\000a    )"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+    create table users (
+        id bigint identity not null,
+        password varchar(255),
+        role varchar(255) not null,
+        username varchar(255) not null,
+        primary key (id)
+    ) [42001-224]
+2025-03-09 02:19:33.471625+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+
+    alter table users 
+       drop constraint UK_r43af9ap4edm43mmtq0 [42102-224]
+2025-03-09 02:19:33.472594+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+
+    alter table users 
+       add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (use [42102-224]
